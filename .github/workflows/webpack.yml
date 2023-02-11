@@ -37,4 +37,4 @@ jobs:
           npm install
           npm install -D webpack-cli
           npm install -g webpack-cli
-          snowpack build
+          webpack-cli build
