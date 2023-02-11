@@ -39,4 +39,4 @@ jobs:
           npm install -g webpack
           npm install -D webpack-cli
           npm install -g webpack-cli
-          webpack-cli build
+          webpack build
