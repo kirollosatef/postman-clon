@@ -121,69 +121,69 @@
           </div>
         </div>
       </form>
-      <div class="mt-5" data-response-section>
+      <div class="mt-5 d-none" data-response-section>
         <h3>Response</h3>
         <div class="d-flex my-2">
-          <div class="me-3">Status: <span data-status>200</span></div>
-          <div class="me-3">Time: <span data-time>10</span>ms</div>
-          <div class="me-3">Size: <span data-size>10</span>kb</div>
+          <div class="me-3">Status: <span data-status></span></div>
+          <div class="me-3">Time: <span data-time></span>ms</div>
+          <div class="me-3">Size: <span data-size></span></div>
         </div>
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active"
-              id="query-params-tab"
+              id="body-tab"
               data-bs-toggle="tab"
-              data-bs-target="#query-params"
+              data-bs-target="#body"
               type="button"
               role="tab"
-              aria-controls="query-params"
+              aria-controls="body"
               aria-selected="true"
             >
-              Query Params
+              Body
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="json-tab"
+              id="response-headers-tab"
               data-bs-toggle="tab"
-              data-bs-target="#json"
+              data-bs-target="#response-headers"
               type="button"
               role="tab"
-              aria-controls="json"
+              aria-controls="response-headers"
               aria-selected="false"
             >
-              JSON
+              Headers
             </button>
           </li>
         </ul>
         <div class="tab-content p-3 border-top-0 border">
           <div
             class="tab-pane fade show active"
-            id="query-params"
+            id="body"
             role="tabpanel"
-            aria-labelledby="query-params-tab"
+            aria-labelledby="body-tab"
           >
-            <div data-query-params></div>
-            <button
-              data-add-query-param-btn
-              class="mt-2 btn btn-outline-success"
-              type="button"
-            >
-              Add
-            </button>
+            <div
+              data-json-response-body
+              class="overflow-auto"
+              style="max-height: 200px"
+            ></div>
           </div>
           <div
             class="tab-pane fade"
-            id="json"
+            id="response-headers"
             role="tabpanel"
-            aria-labelledby="json-tab"
+            aria-labelledby="response-headers-tab"
           >
             <div
-              data-json-request-body
-              class="overflow-auto"
-              style="max-height: 200px"
+              style="
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 0.5rem 2rem;
+              "
+              data-response-headers
             ></div>
           </div>
         </div>
