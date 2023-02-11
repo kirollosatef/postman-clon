@@ -36,4 +36,4 @@ jobs:
         run: |
           npm install
           npm install -D webpack-cli
-          npm run build
+          snowpack build
