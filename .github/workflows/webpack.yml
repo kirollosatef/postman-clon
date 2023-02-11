@@ -26,9 +26,4 @@ jobs:
         run: |
           npm install
           npm install -D webpack-cli
-      - name: deploy to github pages
-        uses: https
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          npm start
