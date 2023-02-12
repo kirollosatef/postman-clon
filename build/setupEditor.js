@@ -1,7 +1,7 @@
-import { EditorState, basicSetup } from "../_snowpack/pkg/@codemirror/basic-setup.js";
-import { EditorView, keymap } from "../_snowpack/pkg/@codemirror/view.js";
-import { defaultTabBinding } from "../_snowpack/pkg/@codemirror/commands.js";
-import { json } from "../_snowpack/pkg/@codemirror/lang-json.js";
+import { EditorState, basicSetup } from "./_snowpack/pkg/@codemirror/basic-setup.js";
+import { EditorView, keymap } from "./_snowpack/pkg/@codemirror/view.js";
+import { defaultTabBinding } from "./_snowpack/pkg/@codemirror/commands.js";
+import { json } from "./_snowpack/pkg/@codemirror/lang-json.js";
 
 export default function setupEditor() {
   const jsonRequestBody = document.querySelector("[data-json-request-body]");

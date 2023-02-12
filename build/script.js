@@ -1,7 +1,7 @@
-import "../_snowpack/pkg/bootstrap.js";
-import "../_snowpack/pkg/bootstrap/dist/css/bootstrap.min.css.proxy.js";
-import axios from "../_snowpack/pkg/axios.js";
-import prettyBytes from "../_snowpack/pkg/pretty-bytes.js";
+import "./_snowpack/pkg/bootstrap.js";
+import "./_snowpack/pkg/bootstrap/dist/css/bootstrap.min.css.proxy.js";
+import axios from "./_snowpack/pkg/axios.js";
+import prettyBytes from "./_snowpack/pkg/pretty-bytes.js";
 import setupEditors from "./setupEditor.js";
 
 // select elements from the DOM
